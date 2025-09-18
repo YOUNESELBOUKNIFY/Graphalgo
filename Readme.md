@@ -35,46 +35,50 @@ L’objectif est de fournir un outil simple, pédagogique et extensible pour exp
 
 ### 1️⃣ Cloner le projet
 ```bash
-git clone https://github.com/ton-utilisateur/graph-theory-algorithms.git
-cd graph-theory-algorithms
+git clone https://github.com/YOUNESELBOUKNIFY/Graphalgo.git
+
+cd Graphelgo
 ````
 
 ### 2️⃣ Lancer le backend (Python)
 
 ```bash
-cd backend
-pip install -r requirements.txt
-python app.py
+cd graph-app-backend
+
+ python -m venv venv
+
+ .\venv\Scripts\Activate.ps1
+
+pip install -r requirements.txt 
+
+uvicorn app.main:app --reload
 ```
 
 ### 3️⃣ Lancer le frontend (React)
 
 ```bash
-cd frontend
+cd graphes-frontend
 npm install
 npm start
 ```
 
-L’application sera disponible sur [http://localhost:3000](http://localhost:3000).
 
 ---
 
-## 🎯 Objectifs pédagogiques
 
-* Approfondir la **compréhension théorique** des algorithmes de graphes
-* Fournir un **outil visuel et interactif** pour étudiants et chercheurs
-* Servir de **base pour des projets avancés** :
-
-  * Intelligence Artificielle
-  * Réseaux et optimisation
-  * Data Science et Big Data
 
 ---
 
 ## 📸 Exemple de rendu (UI)
+### Menu 
+![alt text](image.png)
 
-*(insérer ici une capture d’écran de l’application une fois prête)*
+### Construction du Graphe
 
+![alt text](image-1.png)
+
+### Visualisation 2D :
+![alt text](image-2.png)
 ---
 
 ## 👨‍💻 Auteur
@@ -87,21 +91,12 @@ L’application sera disponible sur [http://localhost:3000](http://localhost:300
 
 ---
 
-## 📜 Licence
-
-Ce projet est distribué sous la **licence MIT**.
-Vous êtes libre de l’utiliser, le modifier et le partager librement.
-
----
 
 ## ⭐ Remerciements
 
 * Inspiré par les cours de **Théorie des Graphes et Algorithmes**
 
 
----
-
-```
 
 ---
 
